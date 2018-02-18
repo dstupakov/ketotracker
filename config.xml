@@ -85,4 +85,5 @@
         <variable name="HEALTH_READ_PERMISSION" value="App needs read access" />
         <variable name="HEALTH_WRITE_PERMISSION" value="App needs write access" />
     </plugin>
+    <engine name="ios" spec="~4.5.4" />
 </widget>
