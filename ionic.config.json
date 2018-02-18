@@ -1,0 +1,8 @@
+{
+  "name": "ketotracker",
+  "app_id": "b4c7ddd5",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
