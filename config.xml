@@ -81,4 +81,8 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="com.telerik.plugins.healthkit" spec="^0.5.5">
+        <variable name="HEALTH_READ_PERMISSION" value="App needs read access" />
+        <variable name="HEALTH_WRITE_PERMISSION" value="App needs write access" />
+    </plugin>
 </widget>
