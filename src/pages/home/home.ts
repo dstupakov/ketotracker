@@ -12,7 +12,7 @@ export class HomePage {
   totalCarbs;
   weight;
  
-  constructor(private platform: Platform, public navCtrl: NavController, private health: Health, private firebase: Firebase) {
+  constructor(private platform: Platform, public navCtrl: NavController, private health: Health) {
     this.platform.ready().then(() => {
       this.health.isAvailable()
       .then((available:boolean) => {
