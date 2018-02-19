@@ -7,14 +7,15 @@
   <ion-card>
     <ion-card-header>Raw Health Data</ion-card-header>
     <ion-card-content>
-      <p>Fat: {{ totalFat | json }}</p>
-      <p>Protein: {{ totalProtein | json }}</p>
-      <p>Cards: {{ totalCarbs | json }}</p>
+      <p><strong>Weight:</strong>{{ weight | json }}</p>
+      <p><strong>Fat:</strong>{{ totalFat | json }}</p>
+      <p><strong>Protein:</strong>{{ totalProtein | json}}</p>
+      <p><strong>Carbs:</strong>{{ totalCarbs | json }}</p>
     </ion-card-content>
   </ion-card>
  
   <ion-list>
-    <ion-card *ngFor="let fat of totalFat">
+    <ion-card *ngFor="let fat of totalFat;">
       <ion-card-header>{{ fat.endDate | date }}</ion-card-header>
       <ion-card-content>
           <p>Fat: {{ fat.value }} {{ fat.unit }}</p>
