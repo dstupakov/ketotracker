@@ -10,7 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { HealthKit } from '@ionic-native/health-kit';
+import { Health } from '@ionic-native/health';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,7 @@ import { HealthKit } from '@ionic-native/health-kit';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    HealthKit
+    Health
   ]
 })
 export class AppModule {}
