@@ -5,5 +5,13 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-
-
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor="let blood of bloodGlucose;">
+      <ion-card-header>{{ blood.endDate | date }}</ion-card-header>
+      <ion-card-content>
+          <p>blood: {{ blood.value.glucose }} {{ blood.unit }}</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
